@@ -1,19 +1,19 @@
 # web
-websocket前端封装-方便使用
+websocket前端封装-留个纪念，自己使用
 
 #### 使用说明
 
-```json
+```js
 
 import { InitSocket, sendWSPush, onmessageWS, oncloseWS, onerrorWS } from '@/libs/ws'
 
-created: function () {
+created: function() {
     // websocket 连接
     if (InitSocket()) {
         // 读取消息，渲染数据到页面
         if (!(onmessageWS() === null)) {
-        this.msgHandle(onmessageWS())
-    }
+          this.msgHandle(onmessageWS())
+        }
     }
     
     // 测试消息发送
@@ -29,14 +29,14 @@ created: function () {
 }
 
 methods: {
-    msgHandle (msg) {
+    msgHandle (msg){
       console.log('ws msg is:', msg)
-    },
+    }
  
-    listenConn () {
+    listenConn (){
       setInterval(function () {
         onerrorWS()
       }, 1000)
-    },
+    }
 }
 ```
