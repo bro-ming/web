@@ -14,7 +14,7 @@ created() {
     // websocket 连接
     if (InitSocket()) {
             
-        // 读取消息，渲染数据到页面
+        // 读取消息
         if (!(onmessageWS() === null)) {
           this.msgHandle(onmessageWS())
         }
@@ -33,9 +33,9 @@ created() {
 
 methods: {
     msgHandle (msg) {
-      console.log('ws msg is:', msg)
+      console.log('msg:', msg)
     }
-    
+        
     listenConn () {
       setInterval(function () {
         onerrorWS()
