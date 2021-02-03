@@ -1,7 +1,7 @@
 # web
-websocket前端封装-留个纪念，自己使用
 
-另外服务端键仓库c
+前端写的不多，也没啥好封装的，开发中遇到了websocket，简单封装-留个纪念，自己使用 
+另外服务端<https://github.com/bro-ming/c/tree/main/ws>
 
 #### 使用举例
 
